@@ -1,0 +1,99 @@
+%!Adobe-FontList 1.19
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HACKED
+FamilyName:HACKED
+StyleName:Regular
+MenuName:HACKED
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:HACKED
+WritingScript:Roman
+OutlineFileName:\HACKED.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:26664
+FileModTime:1513154738
+NameArray:0,Mac,4,HACKED
+NameArray:0,Win,1,HACKED
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Mohave-Bold
+FamilyName:Mohave
+StyleName:Bold
+MenuName:Mohave Bold
+StyleBits:0
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Mohave Bold
+WritingScript:Roman
+OutlineFileName:\Mohave-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36160
+FileModTime:1562008324
+NameArray:0,Mac,4,Mohave Bold
+NameArray:0,Win,1,Mohave Bold
+NameArray:0,Win,16,Mohave
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Bold
+FamilyName:Raleway
+StyleName:Bold
+MenuName:Raleway
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Raleway Bold
+WritingScript:Roman
+OutlineFileName:\Raleway-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:179244
+FileModTime:1562008398
+NameArray:0,Mac,4,Raleway Bold
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Light
+FamilyName:Raleway
+StyleName:Light
+MenuName:Raleway Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Raleway Light
+WritingScript:Roman
+OutlineFileName:\Raleway-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:182376
+FileModTime:1562008398
+NameArray:0,Mac,4,Raleway Light
+NameArray:0,Win,1,Raleway Light
+NameArray:0,Win,16,Raleway
+%EndFont
+
