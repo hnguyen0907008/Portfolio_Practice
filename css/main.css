@@ -1,0 +1,197 @@
+.hidden
+{
+	display: none;
+}
+
+html
+{
+	width: 100%;
+}
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url('Raleway-Light.woff2') format('woff2'), 
+       url('Raleway-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('Raleway-Bold.woff2') format('woff2'), 
+       url('Raleway-Bold.woff') format('woff');
+}
+
+body
+{
+	font-family: 'Raleway Light';
+	margin-top: 25px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.container
+{
+	max-width: 90%;
+	padding-bottom: 75px;
+	margin: 0 auto;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   padding-left: 25px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   justify-content: space-between;
+}
+
+#mainLogo
+{
+	margin-right: 50px;
+}
+
+#mainLogo img
+{
+	width: 50px;
+}
+
+nav
+{
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+}
+
+nav a
+{
+	color: black;
+	margin-right: 30px;
+}
+
+.body
+{
+	margin-top: 80px;
+}
+
+/*Footer*/
+footer
+{
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding-left: 25px;
+   margin-bottom: 25px;
+   justify-content: space-between;
+}
+
+.color
+{
+	margin-right: 50px;
+}
+
+/*Change Color*/
+#changeColor
+{
+	color: black;
+	font-family: 'Raleway Bold';
+}
+
+#changeColor:hover
+{
+	color: #262687;
+}
+
+#change
+{
+	color: #00ff00;
+}
+
+
+/*_______________________*/
+
+.socialMedia
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.socialMedia a img
+{
+	width: 20px;
+	margin-right: 18px;
+}
+
+/*INDEX*/
+
+.body, .works
+{
+	display: flex;
+	flex-direction: column;
+}
+.welcome
+{
+	background-color: blue;
+
+}
+
+.featured
+{
+	background: url("../assets/hero.jpg") center no-repeat;
+	height: 280px; 
+	color: white;
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 35%;
+	display: flex;
+	flex-direction: column;
+}
+
+#workTitle
+{
+	font-family: 'Raleway Bold';
+	font-size: 60px;
+	letter-spacing: 10px;
+	color: white;
+	margin-top: 80px;
+}
+
+#workType
+{
+	font-size: 4em;
+}
+
+#pages
+{
+	background-color: green;
+	width: 20px;
+	height: 70px;
+	position: fixed;
+	margin: 0 auto;
+	right: 0;
+	margin-right: 25px;
+	margin-top: 20px;
+}
+
+#arrow
+{
+	width: 20px;
+	height: 70px;
+	background-color: blue;
+	position: fixed;
+	margin: 45%;
+	bottom: 0;
+	margin-bottom: 90px;
+}
+
+/*PROJECTS*/
+
