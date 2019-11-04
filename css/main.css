@@ -146,7 +146,6 @@ footer
 
 .featured
 {
-	background: url("../assets/hero.jpg") center no-repeat;
 	height: 280px; 
 	color: white;
 	text-align: center;
@@ -156,18 +155,35 @@ footer
 	flex-direction: column;
 }
 
+
+.featured:hover
+{
+	filter: grayscale(100%);
+}
+
+.one
+{
+	background: url("../assets/hero.jpg") center no-repeat;
+}
+
+.three
+{
+	background: url("../assets/thermo.png") center no-repeat;
+}
+
 #workTitle
 {
 	font-family: 'Raleway Bold';
-	font-size: 60px;
+	font-size: 50px;
 	letter-spacing: 10px;
-	color: white;
-	margin-top: 80px;
+	color: red;
+	margin-top: 90px;
 }
 
 #workType
 {
-	font-size: 4em;
+	font-size: 2.5em;
+	color: yellow;
 }
 
 #pages
@@ -194,4 +210,39 @@ footer
 }
 
 /*PROJECTS*/
+.featuredHero
+{
+	height: 280px;
+	margin-bottom: 30px;
+}
+
+.one
+{
+	background: url("../assets/hero.jpg") center no-repeat;
+}
+
+#pj
+{
+	height: 900px;
+	background-color: red;
+	margin-top: 30px;
+}
+
+.nextPj
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 80px;
+	margin-top: 30px;
+}
+
+#previous
+{
+	background-color: blue;
+}
+
+#next
+{
+	background-color: black;
+}
 
