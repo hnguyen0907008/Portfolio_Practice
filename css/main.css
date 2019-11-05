@@ -20,10 +20,17 @@ html
        url('Raleway-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Mohave Bold';
+  src: url('Mohave-Bold.woff2') format('woff2'), 
+       url('Mohave-Bold.woff') format('woff');
+}
+
 body
 {
 	font-family: 'Raleway Light';
 	margin-top: 25px;
+	background-color: #efefef;
 }
 
 a
@@ -75,9 +82,19 @@ nav a
 	margin-right: 30px;
 }
 
+nav a:hover
+{
+	color: white;
+	background-color: black;
+	font-family: 'Raleway Bold';
+}
+
 .body
 {
 	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 /*Footer*/
@@ -146,29 +163,19 @@ footer
 
 .featured
 {
-	height: 280px; 
+	height: 325px; 
 	color: white;
 	text-align: center;
 	margin-bottom: 100px;
 	margin-top: 35%;
 	display: flex;
 	flex-direction: column;
+	background-color: pink;
 }
 
-
-.featured:hover
+.two
 {
-	filter: grayscale(100%);
-}
-
-.one
-{
-	background: url("../assets/hero.jpg") center no-repeat;
-}
-
-.three
-{
-	background: url("../assets/thermo.png") center no-repeat;
+	background: url(../images/equillibrium_feat.jpg) center no-repeat;
 }
 
 #workTitle
@@ -176,14 +183,13 @@ footer
 	font-family: 'Raleway Bold';
 	font-size: 50px;
 	letter-spacing: 10px;
-	color: red;
 	margin-top: 90px;
+	color: white;
 }
 
 #workType
 {
 	font-size: 2.5em;
-	color: yellow;
 }
 
 #pages
@@ -212,37 +218,117 @@ footer
 /*PROJECTS*/
 .featuredHero
 {
-	height: 280px;
-	margin-bottom: 30px;
+	background-color: blue;
+	margin: 0 auto;
 }
 
-.one
+.pjIntro
 {
-	background: url("../assets/hero.jpg") center no-repeat;
+	text-align: center;
+	margin-top: 30px;
 }
 
 #pj
 {
-	height: 900px;
-	background-color: red;
+	margin: 0 auto;
 	margin-top: 30px;
+}
+
+#pj img, .featuredHero img
+{
+	width: 100%;
+    display: block;
 }
 
 .nextPj
 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 80px;
-	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Raleway Bold';
+	font-size: 20px;
+}
+
+.nextPj a
+{
+	color: white;
 }
 
 #previous
 {
-	background-color: blue;
+	background-color: red;
+	width: 40%;
+	padding-top: 50px;
 }
 
 #next
 {
 	background-color: black;
+	width: 40%;
+	padding-top: 50px;
 }
 
+/*ABOUT*/
+#aboutMe 
+{
+	margin: 0 auto;
+}
+
+.meDetail 
+{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#myImg
+{
+	background-color: red;
+	height: 300px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+#hien
+{
+	font-family: 'Mohave Bold';
+}
+
+#moreAbtMe
+{
+	margin-top: 30px;
+}
+
+/*Contact Form*/
+.contact
+{
+	margin-top: 30px;
+	background-color: purple;
+	padding: 30px;
+}
+
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  	
+}
+
+@media screen and (min-width: 1024px) {
+  	.meDetail 
+  	{
+  		display: flex;
+  		flex-direction: row;
+  		justify-content: space-between;
+  		padding-right: 100px;
+  	}
+
+
+  	#moreAbtMe
+  	{
+  		margin-top: 0px;
+ 
+  		width: 70%;
+  	}
+}
