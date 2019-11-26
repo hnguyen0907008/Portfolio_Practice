@@ -176,6 +176,8 @@ footer
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
+	width: 100%;
+	margin-top: 40px;
 }
 
 .featured
@@ -185,14 +187,13 @@ footer
 	display: flex;
 	flex-direction: column;
 	background-color: pink;
-	width: 100%;
+	padding-top: 90px;
 	padding-bottom: 90px;
 }
 
-.five
+.six
 {
-	background: url(../images/organ_feat.jpg) center no-repeat;
-	filter: grayscale(100%);
+	background: url("../images/feat_vg.jpg") center no-repeat;
 }
 
 .five:hover
@@ -205,24 +206,12 @@ footer
 	font-family: 'Raleway Bold';
 	font-size: 50px;
 	letter-spacing: 10px;
-	margin-top: 90px;
 	color: white;
 }
 
 #workType
 {
 	font-size: 2.5em;
-}
-
-#arrow
-{
-	width: 20px;
-	height: 70px;
-	background-color: blue;
-	position: fixed;
-	margin: 45%;
-	bottom: 0;
-	margin-bottom: 90px;
 }
 
 /*PROJECTS*/
@@ -322,10 +311,27 @@ footer
 
 /*Responsive*/
 @media screen and (min-width: 768px) {
+	.works
+	{
+		grid-gap: 40px;
+	}
+}
   	
 
 @media screen and (min-width: 1024px) {
+	.works 
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
 
+	.featured
+	{ 
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
   
 
 
@@ -335,4 +341,4 @@ footer
  
   		width: 70%;
   	}
-}
+} /*End Desktop*/
