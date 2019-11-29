@@ -26,6 +26,11 @@ html
        url('Mohave-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Mohave Light';
+  src: url('Mohave-Light.woff') format('woff');
+}
+
 body
 {
 	font-family: 'Raleway Light';
@@ -41,7 +46,7 @@ a
 .container
 {
 	max-width: 90%;
-	padding-bottom: 75px;
+	padding-bottom: 40px;
 	margin: 0 auto;
 }
 
@@ -191,21 +196,32 @@ footer
 	padding-bottom: 90px;
 }
 
+.one
+{
+	background: url("../images/feat_traa.jpg") center no-repeat;
+}
+
+.four
+{
+	background: url("../images/feat_mashup.jpg") center no-repeat;
+}
+
+.five
+{
+	background: url("../images/feat_donate.jpg") center no-repeat;
+}
+
 .six
 {
 	background: url("../images/feat_vg.jpg") center no-repeat;
 }
 
-.five:hover
-{
-	filter: grayscale(0%);
-}
 
 #workTitle
 {
 	font-family: 'Raleway Bold';
 	font-size: 50px;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	color: white;
 }
 
@@ -214,30 +230,64 @@ footer
 	font-size: 2.5em;
 }
 
-/*PROJECTS*/
+/*PROJECTS - EACH WORK*/
 .featuredHero
 {
-	background-color: blue;
 	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#briefInfo
+{
+	font-family: 'Mohave Light';
+	font-size: 18px;
+	border-left: 5px solid #FF7BAC;
+}
+
+
+#briefInfo p
+{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+#type
+{
+	font-family: 'Mohave Bold';
 }
 
 .pjIntro
 {
-	text-align: center;
 	margin-top: 30px;
+	background-color: #E6E6E6;
+	padding: 20px;
 }
 
+/*Breakdown*/
 #pj
 {
 	margin: 0 auto;
 	margin-top: 30px;
 }
 
-#pj img, .featuredHero img
+#breakdown
 {
-	width: 100%;
-    display: block;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
+
+#breakdown h4
+{
+	font-family: 'Mohave Bold';
+	margin-bottom: 15px;
+}
+
+/*End Breakdown*/
+
 
 .nextPj
 {
@@ -256,18 +306,23 @@ footer
 	color: white;
 }
 
-#previous
+.previous
 {
 	background-color: red;
-	width: 40%;
 	padding-top: 50px;
+	width: 40%;
 }
 
-#next
+.next
 {
 	background-color: black;
 	width: 40%;
 	padding-top: 50px;
+}
+
+.sixth
+{
+	background: url("../images/next_vg.jpg") center no-repeat;;
 }
 
 /*ABOUT*/
