@@ -46,7 +46,7 @@ a
 .container
 {
 	max-width: 90%;
-	padding-bottom: 40px;
+	padding-bottom: 70px;
 	margin: 0 auto;
 }
 
@@ -234,24 +234,42 @@ footer
 .featuredHero
 {
 	margin: 0 auto;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
-
+	width: 100%;
 }
 
-#briefInfo
+#spc
+{
+	width: 100%;
+}
+
+.briefInfo
 {
 	font-family: 'Mohave Light';
 	font-size: 18px;
-	border-left: 5px solid #FF7BAC;
 }
 
 
-#briefInfo p
+.briefInfo p
 {
 	margin-bottom: 10px;
 	margin-left: 10px;
+}
+
+.fr
+{
+	border-left: 5px solid #648417;
+}
+
+.fi
+{
+	border-left: 5px solid #444539;
+}
+
+.sx
+{
+	border-left: 5px solid #86afb6;
 }
 
 #type
@@ -280,10 +298,21 @@ footer
 	margin-bottom: 20px;
 }
 
+#breakdown img
+{
+	width: 100%;
+}
+
 #breakdown h4
 {
 	font-family: 'Mohave Bold';
 	margin-bottom: 15px;
+}
+
+#workBg
+{
+	background-color: #efefef;
+	margin-top: 20px;
 }
 
 /*End Breakdown*/
@@ -363,6 +392,26 @@ footer
 	padding: 30px;
 }
 
+
+/*PROJECTS*/
+#pjList
+{
+	display: flex;
+	flex-direction: row;
+	flex-direction: flex-start;
+	margin-bottom: 40px;
+}
+
+#pjList img
+{
+	width: 50%;
+}
+
+#pjLink
+{
+	margin-left: 5px;
+	width: 60%;
+}
 
 /*Responsive*/
 @media screen and (min-width: 768px) {
