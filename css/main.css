@@ -31,6 +31,12 @@ html
   src: url('Mohave-Light.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Baskervville';
+  src: url('Baskervville-Italic.woff2') format('woff2'), 
+       url('Baskervville-Italic.woff') format('woff');
+}
+
 body
 {
 	font-family: 'Raleway Light';
@@ -85,6 +91,7 @@ nav a
 {
 	color: black;
 	margin-right: 30px;
+	font-family: 'Raleway Bold';
 }
 
 nav a:hover
@@ -94,11 +101,9 @@ nav a:hover
 	font-family: 'Raleway Bold';
 }
 
-.body
+.body, .pjBody
 {
 	margin-top: 80px;
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
 }
 
@@ -313,6 +318,7 @@ footer
 {
 	background-color: #efefef;
 	margin-top: 20px;
+	padding: 20px;
 }
 
 /*End Breakdown*/
@@ -322,7 +328,6 @@ footer
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	height: 150px;
 	margin-top: 50px;
 	text-align: center;
@@ -339,49 +344,115 @@ footer
 {
 	background-color: red;
 	padding-top: 50px;
-	width: 40%;
+	width: 50%;
 }
 
 .next
 {
-	background-color: black;
-	width: 40%;
+	background-color: black;;
 	padding-top: 50px;
+	width: 50%;
+}
+
+.fifth
+{
+	background: url("../images/feat_donate.jpg") center no-repeat;
 }
 
 .sixth
 {
-	background: url("../images/next_vg.jpg") center no-repeat;;
+	background: url("../images/feat_vg.jpg") center no-repeat;
 }
 
 /*ABOUT*/
-#aboutMe 
+#greeting h2
 {
-	margin: 0 auto;
+	font-size: 20vw;
+	font-family: 'Baskervville';
 }
 
-.meDetail 
-{
-	margin: 0 auto;
-	margin-top: 30px;
-}
-
-#myImg
-{
-	background-color: red;
-	height: 300px;
-	width: 250px;
-	margin: 0 auto;
-}
-
-#hien
+#greeting h3
 {
 	font-family: 'Mohave Bold';
+	font-size: 21px;
+	margin-top: 15px;
 }
 
-#moreAbtMe
+#meIntro
 {
 	margin-top: 30px;
+	font-family: 'Raleway Bold';
+}
+
+#underline
+{
+	color: blue;
+}
+
+#underline:hover
+{
+	border-bottom: 3px solid blue;
+}
+
+#picture
+{
+	background-color: black;
+	height: 120px;
+	margin-top: 50px;
+}
+
+.categories
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+#branding ul
+{
+	border-left: 5px solid #262687;
+	padding-left: 5px;
+}
+
+#edu 
+{
+	border-left: 5px solid #00FF00;
+	padding-left: 5px;
+	margin-left: 120px;
+}
+
+#apps
+{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 320px;
+}
+
+#apps2
+{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#apps img, #apps2 img
+{
+	width: 50px;
+}
+
+
+#note
+{
+	margin-top: 50px;
+	transform: rotate(-30deg);
+	width: 200px;
+	background-color: #efefef;
+	padding: 20px;
+	margin-bottom: 70px;
+	font-family: 'Baskervville';
 }
 
 /*Contact Form*/
@@ -394,11 +465,11 @@ footer
 
 
 /*PROJECTS*/
+
 #pjList
 {
 	display: flex;
 	flex-direction: row;
-	flex-direction: flex-start;
 	margin-bottom: 40px;
 }
 
@@ -409,17 +480,66 @@ footer
 
 #pjLink
 {
-	margin-left: 5px;
-	width: 60%;
+	background-color: black;
+	width: 50%;
+	padding: 15px;
+}
+
+#pjLink:hover
+{
+	background-color: #262687;
+}
+
+#linkTitle
+{
+	color: white;
+	font-family: 'Mohave Bold';
+	font-size: 20px;
+}
+
+#linkTitle:hover
+{
+	color: #00FF00;
+}
+
+#pjType
+{
+	color: white;
+	font-size: 15px;
+	margin-top: 5px;
 }
 
 /*Responsive*/
 @media screen and (min-width: 768px) {
+	.body
+	{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
 	.works
 	{
 		grid-gap: 40px;
 	}
-}
+
+	/*Each Project Page*/
+	.briefInfo
+	{
+		font-size: 20px;
+	}
+
+	#breakdown h4
+	{
+		font-size: 20px;
+	}
+
+	#workBg
+	{
+		margin-top: 30px;
+		padding: 30px;
+	}
+
+}/*end Tablet*/
   	
 
 @media screen and (min-width: 1024px) {
