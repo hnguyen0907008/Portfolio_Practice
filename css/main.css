@@ -477,6 +477,13 @@ footer
 
 /*PROJECTS*/
 
+.gif
+{
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+
 #pjList
 {
 	display: flex;
