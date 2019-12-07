@@ -20,23 +20,41 @@
 			</div>
 		</header>
 
-		<section class="body">
+		<section class="contactPage body">
+			<p id="collab">Collaboration? You can contact me via...</p>
+			<section id="contactInfo">
+				<div id="socialContact">
+					<img src="images/facebook_black.svg">
+					<a href="#">hiennxfs0734@fpt.edu.vn</a>
+				</div>
+				<div id="socialContact">
+					<img src="images/twitter_black.svg">
+					<a href="#">@someaccount</a>
+				</div>
+				<div id="socialContact">
+					<img src="images/behance_black.svg">
+					<a href="#">@someaccount</a>
+				</div>
+				<div id="socialContact">
+					604-446-8357
+				</div>
+			</section><!--end contactInfo-->
+
 			<section class="contact">
-				<h3>You can contact me via...</h3>
 				<form action="/action_page.php">
     <label for="name">Name</label>
-    <input type="text" id="name" name="yourname" placeholder="Your name.."><br><br>
+    <input type="text" id="infoInput" name="yourname"><br><br>
 
     <label for="email">Email</label>
-    <input type="text" id="email" name="youremail" placeholder="Your email.."><br><br>
+    <input type="text" id="infoInput" name="youremail"><br><br>
 
     <label for="subject">Subject</label>
-    <input type="text" id="subject" name="yoursubject" placeholder="Subject"><br><br>
+    <input type="text" id="infoInput" name="yoursubject"><br><br>
 
-    <label for="message">Message</label>
-    <textarea>Your message to me...</textarea><br><br>
+    <label for="message">Message</label><br><br>
+    <textarea></textarea><br><br>
   
-    <input type="submit" value="Send">
+    <input id="send" type="submit" value="Send">
   </form>
 			</section>
 		</section>
