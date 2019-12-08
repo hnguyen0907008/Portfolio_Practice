@@ -42,6 +42,7 @@ body
 	font-family: 'Raleway Light';
 	margin-top: 25px;
 	background-color:white;
+	height: 100%;
 }
 
 a
@@ -54,6 +55,7 @@ a
 	max-width: 90%;
 	padding-bottom: 70px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 header
@@ -65,9 +67,9 @@ header
    top: 0;
    width: 100%;
    padding-left: 25px;
-   margin-top: 25px;
    margin-bottom: 25px;
    justify-content: space-between;
+   margin-top: 25px;
 }
 
 #mainLogo
@@ -96,15 +98,9 @@ nav a
 
 nav a:hover
 {
-	color: white;
-	background-color: black;
+	border-bottom: 5px solid blue;
 	font-family: 'Raleway Bold';
-}
-
-.body, .pjBody
-{
-	margin-top: 80px;
-	justify-content: flex-start;
+	color: blue;
 }
 
 /*Footer*/
@@ -155,14 +151,20 @@ footer
 
 .welcome
 {
-	height: 100%;
-	background-color: red;
+	width: 100%;
+	align-items: stretch;
+}
+
+.welcome img
+{
+	width: 100%;
 }
 
 .body, .works
 {
 	display: flex;
 	flex-direction: column;
+	margin-top: 80px;
 }
 
 .works 
@@ -186,11 +188,6 @@ footer
 }
 
 .one
-{
-	background: url("../images/feat_traa.jpg") center no-repeat;
-}
-
-.two
 {
 	background: url("../images/feat_traa.jpg") center no-repeat;
 }
@@ -226,7 +223,7 @@ footer
 
 #workType
 {
-	font-size: 2em;
+	font-size: 35px;
 }
 
 /*PROJECTS - EACH WORK*/
@@ -315,7 +312,7 @@ footer
 	width: 100%;
 }
 
-#breakdown h4
+#bdTitle
 {
 	font-family: 'Mohave Bold';
 	margin-bottom: 15px;
@@ -363,13 +360,12 @@ footer
 }
 
 /*ABOUT*/
-#greeting h2
+#greeting img
 {
-	font-size: 20vw;
-	font-family: 'Baskervville';
+	width: 100%;
 }
 
-#greeting h3
+#greet
 {
 	font-family: 'Mohave Bold';
 	font-size: 21px;
@@ -380,6 +376,7 @@ footer
 {
 	margin-top: 30px;
 	font-family: 'Raleway Bold';
+	margin-bottom: 20px;
 }
 
 #underline
@@ -409,14 +406,18 @@ footer
 #branding ul
 {
 	border-left: 5px solid #262687;
-	padding-left: 5px;
 }
 
 #edu 
 {
-	border-left: 5px solid #00FF00;
 	padding-left: 5px;
 	margin-left: 120px;
+}
+
+#edu p
+{
+	border-left: 5px solid #00FF00;
+	padding-left: 5px;
 }
 
 #skills
@@ -446,6 +447,11 @@ footer
 	width: 60px;
 }
 
+#tool
+{
+	display: flex;
+	flex-direction: column;
+}
 
 #note
 {
@@ -456,6 +462,13 @@ footer
 	padding: 20px;
 	margin-bottom: 70px;
 	font-family: 'Baskervville';
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+#note:hover
+{
+	transform: none;
 }
 
 /*Contact Form*/
@@ -583,7 +596,7 @@ textarea
 
 #pjType
 {
-	color: #ff00ff;
+	color: #00FF00;
 	font-size: 15px;
 	margin-top: 5px;
 }
@@ -592,7 +605,7 @@ textarea
 
 /*Responsive*/
 @media screen and (min-width: 768px) {
-	.body
+	.body, .works
 	{
 		margin-left: 20px;
 		margin-right: 20px;
@@ -601,6 +614,23 @@ textarea
 	.works
 	{
 		grid-gap: 40px;
+	}
+
+	a, #pjType, h3, p,  ul li, #skills, #note, #socialContact, label, input
+	{
+		font-size: 1.3em;
+	}
+
+	#bdTitle
+	{
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+
+	#linkTitle
+	{
+		font-size: 2em;
 	}
 
 	/*Each Project Page*/
@@ -628,6 +658,47 @@ textarea
 		margin: 0 auto;
 	}
 
+	/*About*/
+	#skillboard
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#edu 
+	{	
+		padding-left: 5px;
+		margin-left: 50px;
+	}
+
+	#note
+	{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	#meIntro
+{
+	
+	margin-bottom: 30px;
+}
+
+	.contact
+	{
+		padding: 40px 30px 40px 30px;
+		margin-top: 30px;
+	}
+	
+	#collab
+	{
+		font-size: 40px;
+	}
+	
+	#socialContact img
+	{
+		width: 30px;
+	}
+
 }/*end Tablet*/
   	
 
@@ -647,18 +718,88 @@ textarea
 		margin-bottom: 25px;
 	}
 
-	.featured
-	{ 
-		padding-top: 110px;
-		padding-bottom: 110px;
-	}
-
   	#moreAbtMe
   	{
   		margin-top: 0px;
  
   		width: 70%;
   	}
+
+  	/*INDEX*/
+  	.welcome img
+  	{
+  		width: 80%;
+  		display: flex;
+		flex-direction: column;
+  		margin: 0 auto;
+  	}
+
+  	.projectPage
+  	{
+  		display: flex;
+  		flex-direction: row;
+  		width: 100%;
+  	}
+
+  	#projectList
+  	{
+  		display: flex;
+  		flex-direction: column;
+  		width: 50%;
+  		margin-left: 50%;
+  	}
+
+  	.gif
+  	{
+  		width: 40%;
+  		margin: 0 auto;
+  		margin-top: 150px;
+  		position: fixed;
+  	}
+
+  	#linkTitle
+  	{
+  		font-size: 2.5em;
+  	}
+
+  	 #pjType
+  	 {
+  	 	font-size: 1.5em;
+  	 }
+
+	#greeting, #meIntro, #demoreel, #skillboard
+	{
+		margin: 0 auto;
+	}
+
+	#greet 
+	{
+		text-align: center;
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
+
+	#meIntro
+	{
+		text-align: center;
+	}
+
+	#demoreel
+	{
+		margin-top: 30px;
+	}
+
+	#skillboard
+	{
+		justify-content: space-between;
+		width: 800px;
+	}
+
+	#note
+	{
+		transform: none;
+		width: 700px;
+	}
 
   	/*PROJECTS - EACH WORK*/
 	.featuredHero
@@ -742,6 +883,21 @@ textarea
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.contactPage
+	{
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		padding-top: 50px;
+		justify-content: space-between;
+		width: 1600px;
+	}
+
+	.contact
+	{
+		width: 50%;
 	}
 
 } /*End Desktop*/
