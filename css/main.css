@@ -153,31 +153,16 @@ footer
 
 /*INDEX*/
 
+.welcome
+{
+	height: 100%;
+	background-color: red;
+}
+
 .body, .works
 {
 	display: flex;
 	flex-direction: column;
-}
-
-.welcome
-{
-	background-color: red;
-	height: 750px;
-}
-
-.logoAnimation
-{
-	background-color: aqua;
-	height: 400px;
-}
-.introMe 
-{
-	padding-top: 30px;
-}
-
-.introMe p
-{
-	margin-bottom: 30px;
 }
 
 .works 
